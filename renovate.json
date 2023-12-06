@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(ci)",
+    ":assignAndReview(btoic)"
+  ],
+"customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "Dockerfile"
+      ],
+      "matchStrings": [
+       "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sARG .*?_VERSION=(?<currentValue>.*)\\s"
+      ]
+    }
+  ]
+}
