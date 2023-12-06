@@ -1,5 +1,5 @@
 [clog]
-repository = "https://github.com/SysbeeTech/[repo-name]"
+repository = "https://github.com/SysbeeTech/varnish"
 changelog = "CHANGELOG.md"
 from-latest-tag = true
 
