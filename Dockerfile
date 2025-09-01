@@ -1,4 +1,4 @@
-FROM varnish:7.4.2
+FROM varnish:7.7.3
 MAINTAINER "branko@sysbee.net"
 LABEL org.opencontainers.image.source https://github.com/sysbeetech/varnish
 
